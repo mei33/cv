@@ -1,0 +1,9 @@
+.PageSubtitle {
+  --offset-vertical-outer: 0;
+
+  margin-top: var(--offset-vertical-outer);
+  margin-bottom: var(--offset-vertical-outer);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
