@@ -1,0 +1,21 @@
+.Columns {
+  display: flex;
+}
+
+.Columns__column {
+  --offset-horizontal-inner: 16px;
+
+  padding-left: var(--offset-horizontal-inner);
+  padding-right: var(--offset-horizontal-inner);
+}
+
+.Columns__column--left {
+  --size-horizontal: 250px;
+
+  min-width: var(--size-horizontal);
+  width: var(--size-horizontal);
+}
+
+.Columns__column--right {
+  flex-grow: 1;
+}
