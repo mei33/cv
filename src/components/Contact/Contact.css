@@ -1,0 +1,30 @@
+.Contact {
+  display: flex;
+  align-items: center;
+}
+
+.Contact:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.Contact__content {
+  margin-right: 20px;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.Contact__text {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+
+.Contact__text[href]:hover {
+  border-bottom: 1px solid #458baf;
+}
+
+.Contact__icon {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
