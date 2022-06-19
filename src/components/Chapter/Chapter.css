@@ -1,0 +1,24 @@
+.Chapter:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.Chapter__columns {
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.Chapter__title {
+  --offset-vertical-outer: 0;
+
+  margin-top: var(--offset-vertical-outer);
+  margin-bottom: var(--offset-vertical-outer);
+  font-size: 22px;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: right;
+}
+
+.Chapter__fill {
+  border-bottom: 4px dotted;
+  font-size: 22px;
+  font-family: "Bebas Neue", sans-serif;
+}
