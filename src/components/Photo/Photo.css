@@ -2,3 +2,13 @@
   width: 100%;
   border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+  .Photo {
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}

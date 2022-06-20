@@ -1,4 +1,12 @@
 .Layout {
-  margin: 70px auto;
+  --offset-horizontal-inner: 70px;
+
+  margin: var(--offset-horizontal-inner) auto;
   max-width: 990px;
+}
+
+@media (max-width: 768px) {
+  .Layout {
+    --offset-horizontal-inner: 35px;
+  }
 }

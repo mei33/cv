@@ -18,8 +18,8 @@
   margin-bottom: 5px;
   font-family: "Bebas Neue", sans-serif;
   font-size: 20px;
-  text-align: right;
   text-decoration: none;
+  display: inline-block;
   color: #458baf;
 }
 
@@ -32,7 +32,6 @@
 
   margin-top: var(--offset-vertical-outer);
   margin-bottom: var(--offset-vertical-outer);
-  text-align: right;
 }
 
 .Activity__list {
@@ -66,4 +65,15 @@
 
 .Activity__description {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .Activity__aside {
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .Activity__asideSubtitle {
+    text-align: left;
+  }
 }

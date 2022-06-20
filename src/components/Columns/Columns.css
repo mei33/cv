@@ -19,3 +19,14 @@
 .Columns__column--right {
   flex-grow: 1;
 }
+
+@media (max-width: 768px) {
+  .Columns {
+    flex-direction: column;
+  }
+
+  .Columns__column--left {
+    width: auto;
+    min-width: auto;
+  }
+}

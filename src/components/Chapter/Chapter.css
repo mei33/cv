@@ -22,3 +22,17 @@
   font-size: 22px;
   font-family: "Bebas Neue", sans-serif;
 }
+
+@media (max-width: 768px) {
+  .Chapter__columns {
+    margin-bottom: 15px;
+  }
+
+  .Columns.Chapter__columns {
+    flex-direction: row;
+  }
+
+  .Chapter__title {
+    text-align: left;
+  }
+}

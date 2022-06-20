@@ -9,3 +9,9 @@
   line-height: 1.1;
   color: #458baf;
 }
+
+@media (max-width: 768px) {
+  .PageTitle {
+    text-align: center;
+  }
+}

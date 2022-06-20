@@ -7,3 +7,9 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+  .PageSubtitle {
+    margin-bottom: 20px;
+  }
+}
