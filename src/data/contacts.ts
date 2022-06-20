@@ -2,11 +2,6 @@ import { Contact } from "../types";
 
 export const contacts: Contact[] = [
   {
-    href: "tel:+79233313772",
-    icon: "phone",
-    title: "+7 923 331 3772",
-  },
-  {
     href: "mailto:mei33.post@gmail.com",
     icon: "comp",
     title: "mei33.post@gmail.com",
