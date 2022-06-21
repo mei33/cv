@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+.Chapter__left {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
 .Chapter__title {
   --offset-vertical-outer: 0;
 
@@ -21,6 +27,27 @@
   border-bottom: 4px dotted;
   font-size: 22px;
   font-family: "Bebas Neue", sans-serif;
+}
+
+.Chapter__icon {
+  --size: 30px;
+
+  margin-right: 10px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #458baf;
+}
+
+.Chapter__iconInner {
+  --size: 16px;
+
+  fill: white;
+  max-width: var(--size);
+  max-height: var(--size);
 }
 
 @media (max-width: 768px) {

@@ -61,8 +61,8 @@ const IndexPage = () => {
           />
         </section>
 
-        {chapters.map(({ activities, title }, index) => (
-          <Chapter title={title} key={index}>
+        {chapters.map(({ activities, icon, title }, index) => (
+          <Chapter icon={icon} title={title} key={index}>
             {activities.map(
               (
                 { company, description, href, period, position, skills },
