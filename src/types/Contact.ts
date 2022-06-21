@@ -1,5 +1,5 @@
 export interface Contact {
   href?: string;
-  icon?: string;
+  icon?: "code" | "linkedin" | "mail" | "pin";
   title: string;
 }

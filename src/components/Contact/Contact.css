@@ -8,7 +8,6 @@
 }
 
 .Contact__content {
-  margin-right: 20px;
   flex-grow: 1;
   text-align: right;
 }
@@ -24,7 +23,18 @@
 }
 
 .Contact__icon {
-  margin-left: 20px;
+  margin-left: 10px;
   width: 20px;
   height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contact__iconInner {
+  --size: 18px;
+
+  max-width: var(--size);
+  max-height: var(--size);
+  fill: #458baf;
 }
