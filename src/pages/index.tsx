@@ -32,7 +32,7 @@ const IndexPage = () => {
                 <br />
                 Andreev
               </PageTitle>
-              <PageSubtitle>Senior frontend developer</PageSubtitle>
+              <PageSubtitle>Frontend developer</PageSubtitle>
             </header>
             <address>
               {contacts.map(({ href, icon, title }, index) => (
