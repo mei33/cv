@@ -14,7 +14,9 @@ interface Props extends ContactSample {}
 export const Contact: React.FC<Props> = ({ href, icon, title }) => (
   <div className="Contact">
     <div className="Contact__content">{getContent({ href, title })}</div>
-    <div className="Contact__icon">{getIcon(icon)}</div>
+    <div className="Contact__icon" role="presentation">
+      {getIcon(icon)}
+    </div>
   </div>
 );
 
