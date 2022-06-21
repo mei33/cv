@@ -11,49 +11,55 @@ import "./Contact.css";
 
 interface Props extends ContactSample {}
 
-export const Contact: React.FC<Props> = ({ href, icon, title }) => {
-  const getIcon = () => {
-    const commonProps = { className: "Contact__iconInner" };
+export const Contact: React.FC<Props> = ({ href, icon, title }) => (
+  <div className="Contact">
+    <div className="Contact__content">{getContent({ href, title })}</div>
+    <div className="Contact__icon">{getIcon(icon)}</div>
+  </div>
+);
 
-    switch (icon) {
-      case "code": {
-        return <Code {...commonProps} />;
-      }
+function getContent({
+  href,
+  title,
+}: {
+  title: Props["title"];
+  href: Props["href"];
+}) {
+  const commonProps = { className: "Contact__text" };
 
-      case "linkedin": {
-        return <Linkedin {...commonProps} />;
-      }
+  if (href) {
+    return (
+      <a {...commonProps} href={href} target="_blank">
+        {title}
+      </a>
+    );
+  }
 
-      case "mail": {
-        return <Mail {...commonProps} />;
-      }
+  return <span {...commonProps}>{title}</span>;
+}
 
-      case "pin": {
-        return <Pin {...commonProps} />;
-      }
+function getIcon(icon: Props["icon"]) {
+  const commonProps = { className: "Contact__iconInner" };
 
-      default: {
-        return null;
-      }
+  switch (icon) {
+    case "code": {
+      return <Code {...commonProps} />;
     }
-  };
 
-  const getContent = () => {
-    if (href) {
-      return (
-        <a className="Contact__text" href={href} target="_blank">
-          {title}
-        </a>
-      );
+    case "linkedin": {
+      return <Linkedin {...commonProps} />;
     }
 
-    return <span className="Contact__text">{title}</span>;
-  };
+    case "mail": {
+      return <Mail {...commonProps} />;
+    }
 
-  return (
-    <div className="Contact">
-      <div className="Contact__content">{getContent()}</div>
-      <div className="Contact__icon">{getIcon()}</div>
-    </div>
-  );
-};
+    case "pin": {
+      return <Pin {...commonProps} />;
+    }
+
+    default: {
+      return null;
+    }
+  }
+}
