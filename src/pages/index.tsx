@@ -35,8 +35,8 @@ const IndexPage = () => {
               <PageSubtitle>Senior frontend developer</PageSubtitle>
             </header>
             <address>
-              {contacts.map(({ href, icon, title }) => (
-                <Contact href={href} icon={icon} title={title} />
+              {contacts.map(({ href, icon, title }, index) => (
+                <Contact href={href} icon={icon} title={title} key={index} />
               ))}
             </address>
           </SpacedHorizontal>
@@ -61,10 +61,13 @@ const IndexPage = () => {
           />
         </section>
 
-        {chapters.map(({ activities, title }) => (
-          <Chapter title={title}>
+        {chapters.map(({ activities, title }, index) => (
+          <Chapter title={title} key={index}>
             {activities.map(
-              ({ company, description, href, period, position, skills }) => (
+              (
+                { company, description, href, period, position, skills },
+                index
+              ) => (
                 <Activity
                   company={company}
                   description={description}
@@ -72,6 +75,7 @@ const IndexPage = () => {
                   period={period}
                   position={position}
                   skills={skills}
+                  key={index}
                 />
               )
             )}

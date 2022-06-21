@@ -30,8 +30,10 @@ export const Activity: React.FC<Props> = ({
           <h4 className="Activity__title">{position}</h4>
           {Boolean(skills.length) && (
             <ul className="Activity__list" aria-label="Skills">
-              {skills.map((skill) => (
-                <li className="Activity__listItem">{skill}</li>
+              {skills.map((skill, index) => (
+                <li className="Activity__listItem" key={index}>
+                  {skill}
+                </li>
               ))}
             </ul>
           )}
