@@ -25,6 +25,10 @@
     flex-direction: column;
   }
 
+  .Columns__column {
+    --offset-horizontal-inner: 8px;
+  }
+
   .Columns__column--left {
     width: auto;
     min-width: auto;
